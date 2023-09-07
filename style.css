@@ -1,0 +1,121 @@
+/*
+Theme Name: OnoSports
+Theme URI: http://www.example.com/ono-sports/
+Author: Nafcom
+Author URI: http://www.example.com/nafcom/
+Description: A sports-themed WordPress theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: onosports
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #545454;
+}
+
+a:link, a:visited {
+    color: #4285f4;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+div.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+article.post {
+    border-bottom: 4px dashed #ecf0f1;
+}
+
+article.post:last-of-type {
+    border-bottom: none;
+}
+
+.site-header {
+    border-bottom: 3px solid #ecf0f1;
+}
+
+.site-footer {
+    border-top: 3px solid #ecf0f1;
+}
+
+
+/* Reset default list styling */
+.navigation-menu ul,
+.navigation-menu ul:before,
+.navigation-menu ul:after {
+    margin: 0;
+    padding: 0;
+    content: "";
+    display: table;
+}
+
+.navigation-menu ul:after {
+    clear: both;
+}
+
+/* Clear the float */
+.navigation-menu ul {
+    *zoom: 1;
+}
+
+/* Style the navigation menu items */
+.navigation-menu ul li {
+    list-style: none;
+    display: inline-block; /* Display items horizontally */
+    margin-right: 10px; /* Add some spacing between menu items */
+}
+
+.navigation-menu ul li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+.navigation-menu ul li a {
+    text-decoration: none;
+    padding: 12px 17px;
+    border: 2px solid #ecf0f1;
+    border-bottom: none;
+    display: inline-block; /* Display the links as blocks */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+    color: #333;
+}
+
+/* Add a hover effect */
+.navigation-menu ul li a:hover {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .navigation-menu ul {
+        text-align: center; /* Center-align menu items */
+    }
+
+    .navigation-menu ul li {
+        display: block; /* Display items as a list */
+        margin: 10px 0; /* Add spacing between list items */
+    }
+}
+
+.navigation-menu ul li a:hover {
+    background-color: #ebf5fb;
+}
+
+/* Center-align the content within .site-header */
+.site-header {
+    text-align: center;
+}
+
+/* Center-align the navigation menu */
+.navigation-menu {
+    display: inline-block;
+    margin-top: 20px; /* Adjust as needed */
+}
+
